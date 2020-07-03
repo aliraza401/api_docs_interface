@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+
+// Font Variables
+$my_font: "Helvetica Neue", "Helvetica Neue Light", "Helvetica Neue", Helvetica,
+  Arial, "Lucida Grande", sans-serif;
+// $my_font: "Source Sans Pro", sans-serif;
+$my_lg_size: 36px;
+$my_md_size: 18px;
+$my_size: 16px;
+$back_color: #fff;
+
+body {
+  background-color: $back_color;
+  font-family: $my_font !important;
+  font-size: $my_size;
+}
+
+.txt-md {
+  font-size: $my_md_size;
+  font-weight: bold;
+}
+.txt {
+  font-size: $my_size;
+}
+.txt-lg {
+  font-size: $my_lg_size;
+  font-weight: bold;
+}
+
+p {
+  margin: 15px 0px;
+}
+
+#header {
+  font-size: $my_md_size;
+  font-weight: bold;
+  margin-left: 20px;
+  display: inline-flex;
+
+  i{
+      font-size: 20px;
+      font-weight: bolder;
+  }
+
+  h4{
+      padding-left: 10px;
+  }
+}
+
+#header_light {
+  font-weight: normal;
+}
+
+#footer {
+  color: gray;
+  margin-top: 30px;
+}
+#footer_icon {
+  width: 35px;
+  height: auto;
+  margin-bottom: 8px;
+}
+
+// Main page styling
+#my_small_text {
+  display: inline-flex;
+}
+
+// single page
+
+#sidebar_style {
+  max-width: 250px;
+}
+
+#my_top_header {
+  margin-left: 15em;
+}
+
+#my_content {
+  margin-left: 15em;
+}
+
+#banner_style {
+  width: 100%;
+  height: auto;
+  margin-left: 0;
+}
+
+#rgt_bar {
+  text-decoration: none;
+}
+
+#rgt_sidebar {
+  position: sticky;
+  top: 100px;
+}
+
+#quote_para {
+  border-left: 4px solid lightgray;
+  padding-left: 15px;
+}
+
+#top_header {
+  position: fixed;
+}
+
+
+
+
+// side bar
+
+*,
+:before,
+:after {
+  box-sizing: border-box;
+}
+// FONTS
+$sans: "Source Sans Pro", Helvetica, Arial, sans-serif;
+
+// COLORS
+$orange: gray;
+$gray: #35302d;
+$gray-shine: #3c3735;
+$white-off: #dfdbd9;
+
+// REUSABLE STYLES
+.unstyled {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  a {
+    text-decoration: none;
+  }
+}
+.list-inline {
+  overflow: hidden;
+  li {
+    float: left;
+  }
+}
+
+// HEADER STYLES
+.header {
+//   position: fixed;
+//   left: 0;
+//   top: 0;
+//   bottom: 0;
+  width: 15em;
+  height: 100vh;
+  background: $gray;
+}
+
+.logo {
+  font: 200 1.7em $sans;
+  text-align: center;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+
+  a {
+    display: block;
+    padding: 1em 0;
+    color: $white-off;
+    text-decoration: none;
+    transition: 0.15s linear color;
+
+    &:hover {
+      color: #fff;
+      span {
+        color: $orange;
+      }
+    }
+  }
+
+  span {
+    font-weight: 700;
+    transition: 0.25s linear color;
+  }
+}
+
+// MAIN NAV
+.main-nav {
+  ul {
+    border-top: solid 1px $gray-shine;
+  }
+
+  li {
+    border-bottom: solid 1px $gray-shine;
+  }
+
+  a {
+    padding: 1.1em 0;
+    color: $white-off;
+    font: 400 1.125em $sans;
+    text: {
+      align: center;
+      transform: lowercase;
+    }
+
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+
+// SOCIAL LINKS
+.social-links {
+  border-bottom: solid 1px $gray-shine;
+
+  li {
+    width: 20%;
+    border-left: solid 1px $gray-shine;
+    &:first-child {
+      border: none;
+    }
+  }
+
+  a {
+    display: block;
+    height: 5.5em;
+    text-align: center;
+    color: $gray-shine;
+    font: 0.75em/5.5em $sans;
+    &:hover {
+      color: $white-off;
+    }
+  }
+}
+
+// HOVER SLIDE EFFECT
+.list-hover-slide {
+  li {
+    position: relative;
+    overflow: hidden;
+  }
+
+  a {
+    display: block;
+    position: relative;
+    z-index: 1;
+    transition: 0.35s ease color;
+
+    &:before {
+      content: "";
+      display: block;
+      z-index: -1;
+      position: absolute;
+      left: -100%;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      border-right: solid 5px $orange;
+      background: $gray-shine;
+      transition: 0.35s ease left;
+    }
+
+    &.is-current,
+    &:hover {
+      &:before {
+        left: 0;
+      }
+    }
+  }
+}
