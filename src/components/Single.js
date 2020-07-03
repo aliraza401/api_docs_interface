@@ -34,7 +34,7 @@ class Main extends React.Component{
                 >
                   <header class="header" role="banner">
                     <h1 class="logo">
-                      <a href="#">
+                      <a href="#" id='my_nav_link'>
                         <span>GitHub</span> Guide
                       </a>
                     </h1>
@@ -42,16 +42,16 @@ class Main extends React.Component{
                       <nav class="main-nav" role="navigation">
                         <ul class="unstyled list-hover-slide">
                           <li>
-                            <a href="#">About</a>
+                            <a href="#" id='my_nav_link'>About</a>
                           </li>
                           <li>
-                            <a href="#">Work</a>
+                            <a href="#" id='my_nav_link'>Work</a>
                           </li>
                           <li>
-                            <a href="#">Contact</a>
+                            <a href="#" id='my_nav_link'>Contact</a>
                           </li>
                           <li>
-                            <a href="#">Blog</a>
+                            <a href="#" id='my_nav_link'>Blog</a>
                           </li>
                         </ul>
                       </nav>
@@ -62,17 +62,14 @@ class Main extends React.Component{
                 {/* header  */}
                 <div
                   className=""
-                  style={{
-                    position: "sticky",
-                    top: 0,
-                    backgroundColor: "white",
-                    overflow: "hidden",
-                  }}
+                  
                   id={this.state.slider_in ? null: "my_top_header" }
                 >
                   <p id="header" className="py-2">
-                    <i onClick={this.toggleSlider} className="ri-menu-line bold"></i>
-                    <h4>Learn More</h4>
+                    <i onClick={this.toggleSlider} className="ri-menu-line bold" id="toggle_btn"></i>
+                    <span style={{float:"right"}}>
+                      GitHub.com
+                    </span>
                   </p>
                 </div>
         

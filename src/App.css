@@ -92,6 +92,10 @@ p {
   position: fixed;
 }
 
+#my_nav_link {
+  text-decoration: none;
+}
+
 *,
 :before,
 :after {
