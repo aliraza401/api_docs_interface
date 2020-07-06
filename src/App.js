@@ -1,5 +1,4 @@
 import React from "react";
-import "./App.css";
 import "./fluid_css.css";
 import "remixicon/fonts/remixicon.css";
 import Main from "./components/Main";

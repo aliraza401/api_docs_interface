@@ -1,5 +1,5 @@
 import React from "react";
-import "../App.css";
+
 import pik from "../img/pik.png";
 import icon from "../img/icon.jpg";
 

@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "../App.css";
 import banner from "../img/one.png";
 import icon from "../img/icon.jpg";
 import dummy from "../img/dummy.png";
