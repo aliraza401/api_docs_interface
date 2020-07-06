@@ -1,5 +1,7 @@
 import React from "react";
-import "./fluid_css.css";
+import "./App.scss";
+import "./scss/fluid/src/fluid.scss";
+// import "./fluid_css.css";
 import "remixicon/fonts/remixicon.css";
 import Main from "./components/Main";
 import Single from "./components/Single";

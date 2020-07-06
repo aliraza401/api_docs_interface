@@ -1,31 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
 
 // Font Variables
-$my_font: "Helvetica Neue", "Helvetica Neue Light", "Helvetica Neue", Helvetica,
-  Arial, "Lucida Grande", sans-serif;
 // $my_font: "Source Sans Pro", sans-serif;
 $my_lg_size: 36px;
 $my_md_size: 18px;
-$my_size: 16px;
 $back_color: #fff;
-
-body {
-  background-color: $back_color;
-  font-family: $my_font !important;
-  font-size: $my_size;
-}
-
-.txt-md {
-  font-size: $my_md_size;
-  font-weight: bold;
-}
-.txt {
-  font-size: $my_size;
-}
-.txt-lg {
-  font-size: $my_lg_size;
-  font-weight: bold;
-}
 
 p {
   margin: 15px 0px;
@@ -37,13 +16,13 @@ p {
   margin-left: 20px;
   display: inline-flex;
 
-  i{
-      font-size: 20px;
-      font-weight: bolder;
+  i {
+    font-size: 20px;
+    font-weight: bolder;
   }
 
-  h4{
-      padding-left: 10px;
+  h4 {
+    padding-left: 10px;
   }
 }
 
@@ -65,7 +44,7 @@ p {
 #my_small_text {
   display: inline-flex;
 }
-#sm_text_span{
+#sm_text_span {
   margin-left: 4px;
 }
 
@@ -110,16 +89,13 @@ p {
   position: fixed;
 }
 
-#my_nav_link{
+#my_nav_link {
   text-decoration: none;
 }
 
-#toggle_btn{
+#toggle_btn {
   pointer: cursor;
 }
-
-
-
 
 // side bar
 
@@ -155,10 +131,10 @@ $white-off: #dfdbd9;
 
 // HEADER STYLES
 .header {
-//   position: fixed;
-//   left: 0;
-//   top: 0;
-//   bottom: 0;
+  //   position: fixed;
+  //   left: 0;
+  //   top: 0;
+  //   bottom: 0;
   width: 15em;
   height: 100vh;
   background: $gray;
